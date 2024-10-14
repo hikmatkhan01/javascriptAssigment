@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       function howILikeToEat(myChoice) {
+          let result = '';
+   
+          if (myChoice.includes('tea') || myChoice.includes('bread')) {
+                result = `'${myChoice.join("','")}' I only eat that in Breakfast.`;
+           } else if (myChoice.includes('rice') || myChoice.includes('beaf') || myChoice.includes('fish')) {
+                result = `'${myChoice.join("','")}' I only eat that once or twice a week.`;
+           } else if (myChoice.includes('watermelon')) {
+             result = `'${myChoice.join("','")}' I don't eat.`;
+           }
+
+          console.log(result);
+       }
+       howILikeToEat(['tea', 'bread']);
+       howILikeToEat(['rice', 'beaf', 'fish']);
+       howILikeToEat(['watermelon']);
+    </script>
+</head>
+<body>
+   <h1>JavaSCript Example </h1>
+</body>
+</html>
